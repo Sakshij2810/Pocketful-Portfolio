@@ -1,0 +1,50 @@
+:root {
+  --txt-grey: #918c9b;
+}
+
+@font-face {
+  font-family: plus4;
+  src: url(../../assets/PlusJakartaSans-SemiBold.f004b61a.ttf);
+}
+
+.product-card-container {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-card-container:hover {
+  box-shadow: 1px 1px 10px 2px rgb(191, 191, 191);
+}
+.image-box {
+  position: absolute;
+  top: 0%;
+  /* border-top-left-radius: 1rem; */
+  width: 18rem;
+}
+.image-box img {
+  object-fit: contain;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.content-box {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-box h1 {
+}
+.content-box p {
+  margin-top: -1.5rem;
+  text-align: center;
+  color: var(--txt-grey);
+  font-family: plus4;
+  font-size: 0.8rem;
+}

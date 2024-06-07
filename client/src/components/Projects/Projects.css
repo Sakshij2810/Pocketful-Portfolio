@@ -1,0 +1,44 @@
+@font-face {
+  font-family: plus1;
+  src: url(../../assets/PlusJakartaSans-Bold.59d831d2.ttf);
+}
+@font-face {
+  font-family: plus2;
+  src: url(../../assets/PlusJakartaSans-Medium.1d0ee317.ttf);
+}
+
+.project-container {
+  width: 100%;
+  height: 100%;
+}
+.top-project {
+  margin: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-project h1 {
+  font-family: plus2;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.h1-project {
+  margin-top: -3.5rem;
+}
+.main-project {
+  position: relative;
+}
+.main-project img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.project-cards {
+  position: absolute;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}

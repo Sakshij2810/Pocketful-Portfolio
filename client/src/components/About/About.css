@@ -1,0 +1,266 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs--voilet: #5300f4;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --btn-yellow-hover: #ffc107;
+  --btn-yellow: #ffda00;
+  --image-yellow: #fcf7e7;
+  --txt-grey: #918c9b;
+  --about-main: #f6f5f7;
+}
+@font-face {
+  font-family: woff;
+  src: url(../../assets/2b3f1035ed87a788-s.p.woff2);
+}
+@font-face {
+  font-family: plus1;
+  src: url(../../assets/PlusJakartaSans-Bold.59d831d2.ttf);
+}
+@font-face {
+  font-family: plus3;
+  src: url(../../assets/PlusJakartaSans-Regular.74536037.ttf);
+}
+@font-face {
+  font-family: plus4;
+  src: url(../../assets/PlusJakartaSans-SemiBold.f004b61a.ttf);
+}
+
+.about-container {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-about-content {
+  max-width: 100%;
+  font-family: woff;
+
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-left h1 {
+  margin-left: 4rem;
+  font-family: plus1;
+  font-size: 2.5rem;
+}
+.top-left p {
+  margin-left: 4rem;
+  margin-top: -2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.top-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-right: 3rem;
+}
+.right-div {
+  margin-left: -1rem;
+  margin-right: 2rem;
+}
+.right-div p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.right-div h1 {
+  margin-top: -1.5rem;
+  font-family: plus1;
+  font-size: 2.5rem;
+  color: var(--bs--voilet);
+}
+
+/* main-content */
+
+/* left */
+
+.main-about-content {
+  width: 85rem;
+  height: 30rem;
+  background-color: var(--about-main);
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+.left-box {
+  width: 30rem;
+}
+.left-box h1 {
+  font-family: plus1;
+  font-size: 2.5rem;
+}
+
+.left-box .color {
+  margin-top: -2rem;
+  color: var(--bs--voilet);
+}
+.left-box p {
+  font-size: 1rem;
+  letter-spacing: 0.3%;
+}
+
+/* middle */
+.middle-box {
+  position: relative;
+}
+.middle-box .one-div {
+  position: absolute;
+  top: 0;
+  left: -0.5rem;
+  width: 10rem;
+  height: 5rem;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 1px 1px 5px 1px rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-body-1 {
+  position: absolute;
+  top: 0;
+  left: 11rem;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  background-color: var(--bs--voilet);
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 5px 1px rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s;
+}
+.card-body-1 p {
+  text-align: center;
+  font-family: plus4;
+  color: white;
+}
+.middle-box .one-div:hover .card-body-1 {
+  left: 0;
+}
+
+.middle-box .two-div {
+  position: absolute;
+  top: 5rem;
+  left: 21rem;
+  width: 10rem;
+  height: 6rem;
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 1px 1px 5px 1px rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.card-body-2 {
+  position: absolute;
+  top: 0rem;
+  left: 11rem;
+  width: 10rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+  background-color: var(--bs--voilet);
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 5px 1px rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s;
+}
+.card-body-2 p {
+  text-align: center;
+  font-family: plus4;
+  color: white;
+}
+.middle-box .two-div:hover .card-body-2 {
+  left: 0;
+}
+
+.middle-box .three-div {
+  position: absolute;
+  top: 17.4rem;
+  left: 6rem;
+  width: 10rem;
+  height: 6rem;
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 1px 1px 5px 1px rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.card-body-3 {
+  position: absolute;
+  top: 0rem;
+  left: 11rem;
+  width: 10rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+  background-color: var(--bs--voilet);
+
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 5px 1px rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s;
+}
+.card-body-3 p {
+  color: white;
+  text-align: center;
+  font-family: plus4;
+}
+.middle-box .three-div:hover .card-body-3 {
+  left: 0;
+}
+
+/* right */
+
+.right-box h1 {
+  font-family: plus1;
+  font-size: 4rem;
+}
+.right-box .para {
+  font-size: 1rem;
+  letter-spacing: 0.3%;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+}
+.right-box p {
+  font-family: plus4;
+  font-size: 1.2rem;
+}
+
+/* end */
+.end-box {
+  width: 100%;
+
+  color: black;
+}
+.end-box p {
+  text-align: center;
+  font-family: plus4;
+  color: var(--txt-grey);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.work-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

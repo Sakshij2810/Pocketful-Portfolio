@@ -1,0 +1,153 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs--voilet: #5300f4;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --btn-yellow-hover: #ffc107;
+  --btn-yellow: #ffda00;
+  --image-yellow: #fcf7e7;
+  --txt-grey: #918c9b;
+}
+@font-face {
+  font-family: plus1;
+  src: url(../../assets/PlusJakartaSans-Bold.59d831d2.ttf);
+}
+
+.acheivements-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.acheivements-container h1 {
+  font-family: plus1;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+.ach-content {
+  display: grid;
+  /* grid-template-columns: 60% 30%;
+  grid-template-rows: 20% 20%; */
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.item-1 {
+  padding: 2rem 2rem;
+  border-radius: 1.5rem;
+  width: 50rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3edff;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.item-2 {
+  padding: 2rem 2rem;
+  border-radius: 1.5rem;
+  width: 30rem;
+  height: 42rem;
+  background-color: #ebf0f4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.item-3 {
+  padding: 2rem 2rem;
+  border-radius: 1.5rem;
+  width: 50rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #feeaf5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.ach-img {
+  max-width: 28rem;
+  max-height: 28rem;
+}
+.item-1 img {
+  border: 0.1rem solid #feeaf5;
+  width: 20rem;
+  height: 15rem;
+}
+.item-2 img {
+  margin-top: 1rem;
+
+  border: 0.1rem solid #f3edff;
+  width: 26rem;
+  height: 20rem;
+}
+.item-3 img {
+  border: 0.1rem solid #ebf0f4;
+  width: 15rem;
+  height: 17rem;
+}
+.ach-left-div h1 {
+  color: var(--bs--voilet);
+  font-size: 3.5rem;
+  font-family: plus1;
+}
+.ach-left-div P {
+  margin-top: -2rem;
+  font-size: 1.2rem;
+}
+
+.ach-left-div button {
+  border: none;
+  padding: 1rem 3rem;
+  background-color: var(--bs--voilet);
+  color: white;
+  font-family: plus4;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.ach-left-div button::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.357),
+    rgba(255, 255, 255, 0) 70%
+  );
+
+  top: 0%;
+  left: -100px;
+  animation: shine 3.5s infinite linear;
+}
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.ach-left-div button:hover {
+  border: none;
+  background-color: white;
+  color: var(--bs--voilet);
+}
