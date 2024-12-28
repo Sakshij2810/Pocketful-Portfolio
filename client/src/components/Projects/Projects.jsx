@@ -7,8 +7,10 @@ import Rejouice from "../../assets/projectsImages/rejouice.png";
 import Stackoverflow from "../../assets/projectsImages/stackoverflow.png";
 import Outfit from "../../assets/projectsImages/outfit.png";
 import Razorpay from "../../assets/projectsImages/razorpay.png";
-import Swarajrise from "../../assets/projectsImages/swarajrise.png";
+import Swarajrise from "../../assets/projectsImages/swarajrise-home.png";
 import Recipe from "../../assets/projectsImages/recipe.png";
+import Readyfood from "../../assets/projectsImages/readfood.png";
+import Attendence from "../../assets/projectsImages/attendence.png";
 
 const Projects = () => {
   let projects = [
@@ -54,6 +56,18 @@ const Projects = () => {
       title: "Recipe-Meister",
       info: "Developed a feature that allows users to input, customize, and save their own recipes, enhancing user engagement and personalization.",
     },
+    {
+      _id: 8,
+      image: Readyfood,
+      title: "MAX FOODS",
+      info: "Developed an eCommerce grocery store using WordPress.",
+    },
+    {
+      _id: 9,
+      image: Attendence,
+      title: "Attendence Monitoring",
+      info: "Developed an Attendance Monitoring System for HOD, Teachers, and Students using the MERN Stack",
+    },
   ];
   return (
     <div className="project-container">
@@ -71,6 +85,8 @@ const Projects = () => {
           <a
             style={{ textDecoration: "none", color: "black" }}
             href="https://capstone-project-ecommerce-1.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <ProjectCard
               image={projects[0].image}
@@ -81,6 +97,8 @@ const Projects = () => {
           <a
             style={{ textDecoration: "none", color: "black" }}
             href="https://rejoiuce-clone.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <ProjectCard
               image={projects[1].image}
@@ -91,6 +109,8 @@ const Projects = () => {
           <a
             style={{ textDecoration: "none", color: "black" }}
             href="https://stack-overflow-client-eta.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <ProjectCard
               image={projects[2].image}
@@ -99,28 +119,49 @@ const Projects = () => {
             />
           </a>
 
-          <a style={{ textDecoration: "none", color: "black" }} href="">
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            href="https://customized-tshirt-frontend.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <ProjectCard
               image={projects[3].image}
               title={projects[3].title}
               info={projects[3].info}
             />
           </a>
-
           <a
             style={{ textDecoration: "none", color: "black" }}
-            href="https://github.com/Sakshij2810/RazorPay-Integration"
+            href="https://github.com/Sakshij2810/Attendance-monitoring-system"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <ProjectCard
-              image={projects[4].image}
-              title={projects[4].title}
-              info={projects[4].info}
+              image={projects[8].image}
+              title={projects[8].title}
+              info={projects[8].info}
             />
           </a>
 
           <a
             style={{ textDecoration: "none", color: "black" }}
-            href="https://swaraj-rise.vercel.app/"
+            href="https://compareeviction.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ProjectCard
+              image={projects[7].image}
+              title={projects[7].title}
+              info={projects[7].info}
+            />
+          </a>
+
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            href="https://drive.google.com/file/d/1TLR-1wbSE084Cffg8-6YjiR9aa1jhCDy/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <ProjectCard
               image={projects[5].image}
@@ -128,15 +169,16 @@ const Projects = () => {
               info={projects[5].info}
             />
           </a>
-
           <a
             style={{ textDecoration: "none", color: "black" }}
-            href="https://github.com/Sakshij2810/RecipeMeister"
+            href="https://github.com/Sakshij2810/RazorPay-Integration"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <ProjectCard
-              image={projects[6].image}
-              title={projects[6].title}
-              info={projects[6].info}
+              image={projects[4].image}
+              title={projects[4].title}
+              info={projects[4].info}
             />
           </a>
         </div>

@@ -4,11 +4,11 @@ import IronManImage from "../../assets/ironMan.svg";
 import CrossDivider from "../../assets/crossDivider.svg";
 import DBATULogo from "../../assets/BATU_logo.png";
 import GGULogo from "../../assets/ggu.svg";
-import ChateLogo from "../../assets/chate-logo.png";
+// import ChateLogo from "../../assets/chate-logo.png";
 import UpGradLogo from "../../assets/upgrad-color.png";
 import UdemyLogo from "../../assets/udemy-color.webp";
 import NullClassLogo from "../../assets/null-class.webp";
-import OasisInfobyte from "../../assets/oasis.jpeg";
+// import OasisInfobyte from "../../assets/oasis.jpeg";
 
 const About = () => {
   return (
@@ -23,7 +23,7 @@ const About = () => {
           <img src={VerticalLine} alt="vertical-line" />
           <div className="right-div">
             <p>built for</p>
-            <h1>Packetful</h1>
+            <h1>Innovation</h1>
           </div>
           <img src={VerticalLine} alt="vertical-line" />
           <div className="right-div">
@@ -50,7 +50,7 @@ const About = () => {
             width="85%"
             height="85%"
           />
-          <div className="one-div">
+          {/* <div className="one-div">
             <img src={DBATULogo} alt="dbatu-logo" width="60%" height="70%" />
             <p style={{ color: "#294a70", lineHeight: "1rem" }}>
               DBATU University
@@ -62,28 +62,58 @@ const About = () => {
                 Computer Science Engineering
               </p>
             </div>
-          </div>
-          <div className="two-div">
-            <img
-              src={GGULogo}
-              alt="ggu-logo"
-              style={{
-                borderRadius: "0.2rem",
-                padding: "1rem 1rem",
+          </div> */}
+          <a
+            href="https://www.addcomposites.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="one-div">
+              <img
+                src="https://cdn.prod.website-files.com/65d8589d1d07ae7c06b4b253/65dc150bf8f7695a87422fa3_hdr-logo.png"
+                alt="addcomposites-logo"
+                width="60%"
+                height="70%"
+              />
 
-                backgroundColor: "#003468",
-                width: "90%",
-                height: "60%",
-              }}
-            />
-            <div className="card-body-2">
-              <p>
-                Bootcamp: <br />
-                Full-Stack Developement-JavaScript
-              </p>
+              <div className="card-body-1">
+                <p>
+                  Role:
+                  {/* <br /> */}
+                  Full Stack Developer
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="three-div">
+          </a>
+
+          <a
+            href="https://www.upgrad.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="two-div">
+              <img
+                src={GGULogo}
+                alt="ggu-logo"
+                style={{
+                  borderRadius: "0.2rem",
+                  padding: "1rem 1rem",
+
+                  backgroundColor: "#003468",
+                  width: "90%",
+                  height: "60%",
+                }}
+              />
+              <div className="card-body-2">
+                <p>
+                  Bootcamp: <br />
+                  Full-Stack Developement-JavaScript
+                </p>
+              </div>
+            </div>
+          </a>
+
+          {/* <div className="three-div">
             <img
               src={ChateLogo}
               alt="chate-logo"
@@ -98,7 +128,25 @@ const About = () => {
                 PCMB Branch
               </p>
             </div>
-          </div>
+          </div> */}
+          <a
+            href="https://dbatu.ac.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="three-div">
+              <img src={DBATULogo} alt="dbatu-logo" width="60%" height="70%" />
+              <p style={{ color: "#294a70", lineHeight: "1rem" }}>
+                DBATU University
+              </p>
+              <div className="card-body-3">
+                <p>
+                  BTech in: <br />
+                  Computer Science Engineering
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
         <div className="right-box">
           <h1>3+</h1>
@@ -113,6 +161,12 @@ const About = () => {
       <div className="end-box">
         <p>WORK WITH</p>
         <div className="work-card">
+          <img
+            width="8%"
+            height="10%"
+            src="https://cdn.prod.website-files.com/65d8589d1d07ae7c06b4b253/65dc150bf8f7695a87422fa3_hdr-logo.png"
+            alt="addcomposites-logo"
+          />
           <img width="10%" height="20%" src={UpGradLogo} alt="upgard-logo" />
           <img width="10%" height="20%" src={UdemyLogo} alt="udemy-logo" />
           <img
@@ -121,7 +175,7 @@ const About = () => {
             src={NullClassLogo}
             alt="nullclass-logo"
           />
-          <img width="8%" height="10%" src={OasisInfobyte} alt="oasis-logo" />
+          {/* <img width="8%" height="10%" src={OasisInfobyte} alt="oasis-logo" /> */}
         </div>
       </div>
     </div>

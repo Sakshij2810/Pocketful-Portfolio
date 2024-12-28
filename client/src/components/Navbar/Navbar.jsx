@@ -29,7 +29,11 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <a href="https://drive.google.com/file/d/1ZtPIxSGzDb53CIMBWQpT_WAyYVD1F1Ux/view?usp=sharing">
+      <a
+        href="https://drive.google.com/file/d/1QYnVCpLhov5CdfoKlXhQqtkIFQdPh03v/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <button className="nav-btn">Resume</button>
       </a>
     </nav>
